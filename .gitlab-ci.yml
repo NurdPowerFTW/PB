@@ -1,0 +1,20 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules
+before_script:
+  - echo 'Prepare to build...'
+  - sudo apt-get update
+  - echo 'Installing dependencies...'
+  - sudo npm install
+
+build:
+  only:
+    - master
+  stage: build
+  artifacts:
+    paths:
+      - node_modules
+  script:
+    - echo "Job finished"
