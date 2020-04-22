@@ -104,9 +104,9 @@ class SignUp extends React.Component {
 
   async getUser(username) {
     return fetch(`https://api.github.com/users/${username}/repos`, {
-      headers: {
-        authorization: "token b74ddc51c3369ae1b18d1824e0358c1173b3daea",
-      },
+      // headers: {
+      //   authorization: "token b74ddc51c3369ae1b18d1824e0358c1173b3daea",
+      // },
     })
       .then((response) => response.json())
       .then((response) => {

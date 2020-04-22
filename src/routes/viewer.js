@@ -57,6 +57,7 @@ const useStyles = (theme) => ({
     height: "100%",
     display: "flex",
     flexDirection: "column",
+    backgroundColor: "#FFF2F2",
   },
   linkOptions: {
     padding: theme.spacing(1),
